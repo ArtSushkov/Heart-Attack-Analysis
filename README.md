@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```bash
 uvicorn main:app --reload --port 8000
 ```
-Сервис будет доступен по адресу: `http://localhost:8000`
+Сервис будет доступен по адресу: `http://localhost:8000/docs`
 
 ## Использование API
 
