@@ -125,9 +125,9 @@ curl -X POST -F "file=@test_data.csv" http://localhost:8000/predict
 
 ## Пример входных данных (CSV)
 ```csv
-id,Age,Gender,Weight,Height,SystolicBP,DiastolicBP,Cholesterol,Glucose,Smoking,AlcoholConsumption
-1,45,Male,85,175,140,90,200,100,Yes,Occasional
-2,52,Female,65,162,130,85,180,85,No,Never
+,Age,Cholesterol,Heart rate,Diabetes,Family History,Smoking,Obesity,Alcohol Consumption,Exercise Hours Per Week,Diet,Previous Heart Problems,Medication Use,Stress Level,Sedentary Hours Per Day,Income,BMI,Triglycerides,Physical Activity Days Per Week,Sleep Hours Per Day,Blood sugar,CK-MB,Troponin,Gender,Systolic blood pressure,Diastolic blood pressure,id
+0,0.4943820224719101,0.2642857142857143,0.0623281393217231,0.0,1.0,1.0,1.0,1.0,0.3616179475374933,2,0.0,0.0,8.0,0.1943701325296906,0.5877588498420819,0.2834904588967591,0.3064935064935065,1.0,0.3333333333333333,0.2270175751137986,0.0482287853675997,0.0365123661820742,Male,0.2838709677419355,0.3720930232558139,7746
+1,0.2247191011235955,0.9535714285714284,0.0824931255728689,1.0,0.0,0.0,1.0,0.0,0.9964834861899992,2,1.0,1.0,5.0,0.3298883019986054,0.6028825404084432,0.4670359622438044,0.087012987012987,0.0,0.1666666666666666,0.2270175751137986,0.0482287853675997,0.0365123661820742,Female,0.7032258064516128,0.4418604651162791,4202
 ```
 
 ## Обработка ошибок
