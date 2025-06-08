@@ -65,7 +65,11 @@ async def predict(file: UploadFile = File(...), threshold: float = None):
         )
 
 @app.post("/predict_to_csv")
-async def predict_to_csv(file: UploadFile = File(...), threshold: float = None, background_tasks: BackgroundTasks = BackgroundTasks()):
+async def predict_to_csv(
+	file: UploadFile = File(...),
+	threshold: float = None,
+	background_tasks: BackgroundTasks = BackgroundTasks()
+):
     try:
         # Проверка формата файла
         if not file.filename.endswith('.csv'):
